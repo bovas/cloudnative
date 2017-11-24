@@ -1,4 +1,15 @@
 spring:
   cloud:
-    config:
-      
+    config:      
+      server:
+        git:
+          clone-on-start: true
+          uri: https://github.com/bovas/cloudnative.git
+          search-paths:
+          - globalconf
+          username: bovas1990@gmail.com
+          password: passW0rd
+          
+management:
+  security:
+    enabled: false
